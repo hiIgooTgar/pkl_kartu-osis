@@ -1,0 +1,244 @@
+*,
+html {
+  font-size: 85%;
+}
+
+body {
+  background: #008080;
+}
+#bg {
+  width: 1000px;
+  height: 10.2cm;
+
+  margin: 60px;
+  float: left;
+}
+
+/* css kartu depan start */
+
+#id {
+  /* width: 250px;
+  height: 450px; */
+  width: 6.5cm;
+  height: 10.2cm;
+  position: absolute;
+  opacity: 0.88;
+  font-family: sans-serif;
+  transition: 0.4s;
+  background-color: #ffffff;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+#id::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("public/idcard/malawi.png");
+  background-repeat: repeat-x;
+  background-size: 6.5cm 10.2cm;
+  opacity: 0.2;
+  z-index: -1;
+  text-align: center;
+}
+
+#id::before .content-id {
+  padding: 1rem;
+}
+
+#id .kop-kartu {
+  align-items: center;
+  display: grid;
+  gap: 0.2rem;
+  padding-top: 0;
+  padding: 0 0.5rem 0.5rem;
+  grid-template-columns: 30% 70%;
+}
+
+#id .kop-kartu img {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+}
+
+#id .kop-kartu .sekolah-kop {
+  background: linear-gradient(45deg, #005bff, #0033ff);
+  width: 105%;
+  height: 70px;
+  border-bottom-left-radius: 20px;
+  padding: 0 0.7rem;
+}
+
+#id .kop-kartu .sekolah-kop h3 {
+  margin-top: 1.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+#id .container {
+  width: 100%;
+}
+
+.nama-user {
+  color: #007bff;
+}
+
+.barcode {
+  z-index: 2;
+}
+
+.gambar-siswa {
+  margin: 0.5rem 0 1.5rem;
+}
+
+.gambar-siswa img {
+  border: 1.3px solid #000;
+  width: 75px;
+  height: 85px;
+}
+
+.gambar-siswa .keterangan {
+  font-size: 0.8rem;
+  width: 75%;
+  margin: 0 auto 0.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.slogan {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 600;
+  padding-top: 0.5rem;
+  letter-spacing: 0.4px;
+}
+
+#id .content-id .gambar-latar {
+  position: relative;
+  /* jika latar belakang orange bawahnya masih kurang maka tambahin margin-topnya */
+  margin-top: 3.1rem;
+  width: 100%;
+}
+
+.gambar-latar .color1 {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: -3rem;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 40%;
+  left: -1%;
+  width: 100%;
+  height: 130px;
+  background: #ff7f00;
+}
+
+.gambar-latar .color-tengah {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  right: -10%;
+  padding: 0;
+  width: 70%;
+  height: 145px;
+  background: #ff7f00;
+}
+
+.gambar-latar .color2 {
+  /* opacity: 0; */
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 89px;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 40%;
+  right: -1%;
+  width: 120%;
+  height: 120px;
+  background: white;
+}
+
+.container {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+/* css kartu depan end */
+
+/* ============= */
+
+/* css kartu belakang start */
+.id-1 {
+  transition: 0.4s;
+  width: 6.5cm;
+  height: 10.2cm;
+  text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  float: left;
+  margin: auto;
+  margin-left: 280px;
+  border-radius: 2%;
+  color: #fff;
+  background: linear-gradient(45deg, #007aff, #0033ff);
+}
+
+/* .id-1 .content-back-kartu {
+  padding: 1rem;
+} */
+
+.circle {
+  line-height: 0;
+  display: inline-block;
+  margin: 5px;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%; /* relative value */
+  background: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  transition: linear 0.25s;
+  height: 60px;
+  width: 60px;
+  /* margin-bottom: 1rem; */
+}
+
+.circle img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+/* tata tertib */
+.tata-tertib {
+  margin: 0 0 0.5rem;
+  text-align: left;
+}
+
+.tata-tertib p {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.tata-tertib ul {
+  padding-left: 1.2rem;
+  letter-spacing: 0.25px;
+  font-size: 0.8rem;
+  list-style-type: decimal;
+}
+
+/* tanda tangan */
+.id-1 .diketahui-ttd {
+  margin: 1rem 0;
+}
+
+.id-1 .tanda-tangan {
+  width: 35%;
+  height: 45px;
+}
+
+.id-1 .tanda-tangan img {
+  width: 100%;
+  height: 100%;
+}
+
+/* css kartu belakang end */
